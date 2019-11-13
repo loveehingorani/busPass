@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/buspass2"
+        android:layout_above="@+id/text_view"
+        android:layout_marginBottom="180dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/loading"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:textSize="25dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/progressBar"
+        android:layout_marginLeft="120dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/progressBar"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="240dp"
+        android:id="@+id/text_view"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="50dp"
+        />
+
+
+</RelativeLayout>

@@ -20,7 +20,7 @@ import android.widget.Button;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity   {
 
     private DrawerLayout mDrawerLayout;
     private NavController navController;
@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity  {
 
         mDrawerLayout=(DrawerLayout) findViewById(R.id.drawerLayout);
         NavigationView navigationView=(NavigationView) findViewById(R.id.nav_view);
-       // navigationView.setNavigationItemSelectedListener(this);
+      // navigationView.setNavigationItemSelectedListener(this);
 
         navController=Navigation.findNavController(this,R.id.nav_host);
         appBarConfiguration =
-                new AppBarConfiguration.Builder(new int[]{R.id.home,R.id.buybuspass,R.id.transactions,R.id.busTimePdf})
+                new AppBarConfiguration.Builder(new int[]{R.id.home,R.id.buybuspass,R.id.transactions,R.id.busTimePdf,R.id.reminder,R.id.logout})
                         .setDrawerLayout(mDrawerLayout)
                         .build();
 
@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity  {
 //        mToggle=new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
 //        mDrawerLayout.addDrawerListener(mToggle);
 //        mToggle.syncState();
-
-      // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//
+//      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
        // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MainPageFragment()).commit();
         //navigationView.setCheckedItem(R.id.buspass);
     }
@@ -61,10 +61,26 @@ public class MainActivity extends AppCompatActivity  {
     public void onBackPressed() {
         if(mDrawerLayout.isDrawerOpen(GravityCompat.START))
             mDrawerLayout.closeDrawer(GravityCompat.START);
-        else
+        else {
             super.onBackPressed();
+        }
     }
-
+//    public boolean onNavigationItemSelected(MenuItem item) {
+//        int id = item.getItemId();
+//
+//        if (id == R.id.logout) {
+//
+//            FirebaseAuth.getInstance().signOut();
+//            Intent intent = new Intent(this, LoginActivity.class);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//            startActivity(intent);
+//            finish();
+//        }
+//       // DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+//        mDrawerLayout.closeDrawer(GravityCompat.START);
+//        return true;
+//
+//    }
 //    @Override
 //    public boolean onOptionsItemSelected(MenuItem item) {
 //        if(mToggle.onOptionsItemSelected(item))
