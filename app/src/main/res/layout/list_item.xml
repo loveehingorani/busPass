@@ -2,9 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     >
 
     <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -31,8 +34,9 @@
                         android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="8:45 AM"
+
                         android:id="@+id/time"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
 
                     />
                 <TextView
@@ -71,7 +75,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/bus"
                     android:text="LNMIIT Bus Service"
-                    android:textSize="15dp"
+                    android:textSize="12dp"
                     />
 
             </LinearLayout>
@@ -86,8 +90,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Set Reminder"
-                    android:textSize="18dp"
-                    android:layout_marginLeft="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15sp"
 
                     />
                 <Switch
@@ -99,15 +103,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Notify Me"
-                    android:textSize="18dp"
+                    android:textSize="15dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+
 
                     />
                 <Switch
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/notifyMe"
+                    android:layout_marginLeft="20sp"
                     />
 
             </LinearLayout>

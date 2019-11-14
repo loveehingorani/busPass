@@ -21,6 +21,7 @@ import static java.util.Calendar.AM;
 public class ShowSetReminderFragment extends Fragment {
 
 private Switch setReminder,notifyMe;
+private String getInfo[]=new String[3];
 private String day="Saturday",start="Ajmeri Gate",end="LNMIIT";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -118,7 +119,10 @@ private String day="Saturday",start="Ajmeri Gate",end="LNMIIT";
         saturdayList.add(new BusInfo("1:25 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
         saturdayList.add(new BusInfo("5:20 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
 
-
+getInfo=getArguments().getStringArray("key");
+day=getInfo[0];
+start=getInfo[1];
+end=getInfo[2];
         ArrayList<BusInfo> selectedList=new ArrayList<BusInfo>();
         if(day=="Monday"||day=="Tuesday"||day=="Wednesday"||day=="Thursday"||day=="Friday")
         {

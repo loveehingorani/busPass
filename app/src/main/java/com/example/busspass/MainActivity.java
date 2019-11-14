@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity   {
 //        mToggle.syncState();
 //
 //      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-       // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MainPageFragment()).commit();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MainPageFragment()).commit();
         //navigationView.setCheckedItem(R.id.buspass);
     }
 

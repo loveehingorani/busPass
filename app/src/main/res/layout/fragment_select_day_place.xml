@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/bus2"
+        android:background="#000"/>
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:id="@+id/txtvw"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="35dp"
+            android:text="Set Reminder"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="240dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Select Day"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:layout_marginTop="85dp">
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Monday"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Tuesday"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Wednesday"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Thursday"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Friday"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Saturday"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Sunday"
+                    android:textColor="#FF0000" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="190dp"
+            android:text="Select"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="320dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Select Arrival"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_marginTop="165dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded">
+
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button11"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Ajmeri gate"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button12"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="LNMIIT"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button13"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Raja park"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button14"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Nai ki thadi"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button15"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Chomu Puliya"
+                    android:textColor="#FF0000" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="190dp"
+            android:text="Select"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="400dp">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="Select Destination"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_marginTop="245dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView3"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="20dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button31"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Ajmeri gate"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button32"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="LNMIIT"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button33"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Raja park"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button34"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Nai ki thadi"
+                    android:textColor="#FF0000" />
+
+                <Button
+                    android:id="@+id/button35"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Chomu puliya"
+                    android:textColor="#FF0000" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="190dp"
+            android:text="Select"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btgo"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/rounded1"
+        android:text="Proceed" />
+
+
+</RelativeLayout>

@@ -19,11 +19,11 @@
             android:id="@+id/action_home_to_PDFFragment"
             app:destination="@id/busTimePdf" />
         <action
-            android:id="@+id/action_home_to_showSetReminderFragment"
-            app:destination="@id/reminder" />
-        <action
-            android:id="@+id/action_home_to_logoutFragment2"
+            android:id="@+id/action_home_to_logout"
             app:destination="@id/logout" />
+        <action
+            android:id="@+id/action_home_to_reminder"
+            app:destination="@id/reminder" />
     </fragment>
     <fragment
         android:id="@id/buybuspass"
@@ -41,7 +41,7 @@
         android:label="fragment_pdf"
         tools:layout="@layout/fragment_pdf" />
     <fragment
-        android:id="@+id/reminder"
+        android:id="@+id/reminder1"
         android:name="com.example.busspass.ShowSetReminderFragment"
         android:label="fragment_show_set_reminder"
         tools:layout="@layout/fragment_show_set_reminder" />
@@ -50,4 +50,13 @@
         android:name="com.example.busspass.LogoutFragment"
         android:label="fragment_logout"
         tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/reminder"
+        android:name="com.example.busspass.SelectDayPlaceFragment"
+        android:label="fragment_select_day_place"
+        tools:layout="@layout/fragment_select_day_place" >
+        <action
+            android:id="@+id/action_selectDayPlaceFragment_to_reminder1"
+            app:destination="@id/reminder1" />
+    </fragment>
 </navigation>
