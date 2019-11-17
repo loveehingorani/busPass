@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -21,29 +22,29 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainPageFragment extends Fragment {
 
-    private Button mLogOut,mBuyPass,mTransactions,mCallButton,mPdfButton;
+    private CardView mBuyPass,mTransactions,mCallButton,mReminder;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_main_page, container, false);
-        mLogOut=v.findViewById(R.id.logout);
+        //mLogOut=v.findViewById(R.id.logout);
         mBuyPass=v.findViewById(R.id.buyPass);
 
         mCallButton=v.findViewById(R.id.button_call);
-        mPdfButton=v.findViewById(R.id.button1);
+       // mPdfButton=v.findViewById(R.id.button1);
         mTransactions=v.findViewById(R.id.transactions);
         mBuyPass.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.buybuspass));
       //  mBusPass.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.buyBusPassFragment));
         mTransactions.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.transactions));
-        mLogOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signOut(mLogOut);
-
-            }
-        });
+//        mLogOut.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                signOut(mLogOut);
+//
+//            }
+//        });
 
         mCallButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
@@ -60,7 +61,7 @@ public class MainPageFragment extends Fragment {
 
 
 
-        mPdfButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.busTimePdf));
+       // mPdfButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.busTimePdf));
 
 
 

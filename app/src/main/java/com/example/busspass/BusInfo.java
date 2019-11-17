@@ -6,6 +6,8 @@ public class BusInfo {
     private String start;
     private String end;
     private String bus;
+    private boolean setReminder;
+    private boolean notifyMe;
 
     public BusInfo(String time, String start, String end,String bus) {
         this.time= time;
@@ -26,5 +28,7 @@ public class BusInfo {
     public String getBus() {
         return bus;
     }
+    public boolean getSetReminder() {return setReminder;}
+    public boolean getNotifyMe() {return notifyMe;}
 
 }

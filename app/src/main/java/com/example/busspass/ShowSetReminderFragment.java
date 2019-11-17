@@ -31,38 +31,38 @@ private String day="Saturday",start="Ajmeri Gate",end="LNMIIT";
 
         View v=inflater.inflate(R.layout.fragment_show_set_reminder, container, false);
 
-        ArrayList<BusInfo> mondayList=new ArrayList<BusInfo>();
-        mondayList.add(new BusInfo("7:00 AM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("8:00 AM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("1:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("5:00 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("8:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("9:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("11:00 AM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("3:05 PM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("6:15 PM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("8:05 PM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("6:30 PM","LNMIIT","Raja Park","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("7:00 PM","LNMIIT","Raja Park","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("7:15 PM","Raja Park","LNMIIT","LNMIIT Bus Service"));
-        mondayList.add(new BusInfo("9:45 PM","Raja Park","LNMIIT","LNMIIT Bus Service"));
-
-        mondayList.add(new BusInfo("7:00 AM","Chomu Puliya","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("11:15 AM","Chomu Puliya","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("3:30 PM","Chomu Puliya","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("9:15 AM","LNMIIT","Chomu Puliya","Government Bus"));
-        mondayList.add(new BusInfo("1:30 PM","LNMIIT","Chomu Puliya","Government Bus"));
-        mondayList.add(new BusInfo("5:30 PM","LNMIIT","Chomu Puliya","Government Bus"));
-        mondayList.add(new BusInfo("8:00 AM","Ajmeri Gate","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("12:00 PM","Ajmeri Gate","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("4:00 PM","Ajmeri Gate","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("8:45 AM","LNMIIT","Nai Ki Thadi","Government Bus"));
-        mondayList.add(new BusInfo("12:45 PM","LNMIIT","Nai Ki Thadi","Government Bus"));
-        mondayList.add(new BusInfo("4:45 PM","LNMIIT","Nai Ki Thadi","Government Bus"));
-        mondayList.add(new BusInfo("9:10 AM","Nai Ki Thadi","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("1:25 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
-        mondayList.add(new BusInfo("5:20 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
-
+//        ArrayList<BusInfo> mondayList=new ArrayList<BusInfo>();
+//        mondayList.add(new BusInfo("7:00 AM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("8:00 AM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("1:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("5:00 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("8:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("9:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("11:00 AM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("3:05 PM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("6:15 PM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("8:05 PM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("6:30 PM","LNMIIT","Raja Park","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("7:00 PM","LNMIIT","Raja Park","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("7:15 PM","Raja Park","LNMIIT","LNMIIT Bus Service"));
+//        mondayList.add(new BusInfo("9:45 PM","Raja Park","LNMIIT","LNMIIT Bus Service"));
+//
+//        mondayList.add(new BusInfo("7:00 AM","Chomu Puliya","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("11:15 AM","Chomu Puliya","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("3:30 PM","Chomu Puliya","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("9:15 AM","LNMIIT","Chomu Puliya","Government Bus"));
+//        mondayList.add(new BusInfo("1:30 PM","LNMIIT","Chomu Puliya","Government Bus"));
+//        mondayList.add(new BusInfo("5:30 PM","LNMIIT","Chomu Puliya","Government Bus"));
+//        mondayList.add(new BusInfo("8:00 AM","Ajmeri Gate","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("12:00 PM","Ajmeri Gate","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("4:00 PM","Ajmeri Gate","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("8:45 AM","LNMIIT","Nai Ki Thadi","Government Bus"));
+//        mondayList.add(new BusInfo("12:45 PM","LNMIIT","Nai Ki Thadi","Government Bus"));
+//        mondayList.add(new BusInfo("4:45 PM","LNMIIT","Nai Ki Thadi","Government Bus"));
+//        mondayList.add(new BusInfo("9:10 AM","Nai Ki Thadi","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("1:25 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
+//        mondayList.add(new BusInfo("5:20 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
+//
 
         ArrayList<BusInfo> sundayList=new ArrayList<BusInfo>();
 
@@ -70,7 +70,7 @@ private String day="Saturday",start="Ajmeri Gate",end="LNMIIT";
         sundayList.add(new BusInfo("1:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
         sundayList.add(new BusInfo("3:00 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
         sundayList.add(new BusInfo("7:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
-        sundayList.add(new BusInfo("9:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
+        sundayList.add(new BusInfo("9:30 PM","Ajmeri Gate","LNMIIT",    "LNMIIT Bus Service"));
         sundayList.add(new BusInfo("9:30 PM","Ajmeri Gate","LNMIIT","LNMIIT Bus Service"));
         sundayList.add(new BusInfo("10:00 AM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
         sundayList.add(new BusInfo("12:00 PM","LNMIIT","Ajmeri Gate","LNMIIT Bus Service"));
@@ -121,6 +121,8 @@ private String day="Saturday",start="Ajmeri Gate",end="LNMIIT";
         saturdayList.add(new BusInfo("1:25 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
         saturdayList.add(new BusInfo("5:20 PM","Nai Ki Thadi","LNMIIT","Government Bus"));
 
+
+
 getInfo=getArguments().getStringArray("key");
 day=getInfo[0];
 start=getInfo[1];
@@ -129,14 +131,16 @@ end=getInfo[2];
         if(day=="Monday"||day=="Tuesday"||day=="Wednesday"||day=="Thursday"||day=="Friday")
         {
             for(int i=0;i<29;i++)
-                if(mondayList.get(i).getStart()==start&&mondayList.get(i).getEnd()==end)
-                    selectedList.add(mondayList.get(i));
+                if(new BusTimeList().getMondayList().get(i).getStart()==start&&new BusTimeList().getMondayList().get(i).getEnd()==end)
+                    selectedList.add(new BusTimeList().getMondayList().get(i));
         }
         else if (day=="Sunday")
         {
+
             for(int i=0;i<18;i++)
                 if(sundayList.get(i).getStart()==start&&sundayList.get(i).getEnd()==end)
                     selectedList.add(sundayList.get(i));
+
         }
         else
         {
@@ -152,8 +156,9 @@ end=getInfo[2];
 //        BusInfoAdapter businfo1=new BusInfoAdapter(getContext(),selectedList);
 //        ListView list1=(ListView) v.findViewById(R.id.list);
 //        list1.setAdapter(businfo1);
-
         //selectedList.clear();
+
+
 
 
         setReminder=(Switch) v.findViewById(R.id.setReminder);
