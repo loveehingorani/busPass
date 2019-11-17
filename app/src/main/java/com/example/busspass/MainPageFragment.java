@@ -35,6 +35,7 @@ public class MainPageFragment extends Fragment {
         mCallButton=v.findViewById(R.id.button_call);
        // mPdfButton=v.findViewById(R.id.button1);
         mTransactions=v.findViewById(R.id.transactions);
+        mReminder=v.findViewById(R.id.reminder);
         mBuyPass.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.buybuspass));
       //  mBusPass.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.buyBusPassFragment));
         mTransactions.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.transactions));
@@ -45,7 +46,7 @@ public class MainPageFragment extends Fragment {
 //
 //            }
 //        });
-
+        mReminder.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.reminder));
         mCallButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);

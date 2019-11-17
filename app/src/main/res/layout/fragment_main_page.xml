@@ -33,10 +33,11 @@
                 android:src="@drawable/buy"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="TextView" />
+
+                android:gravity="center"
+                android:text="Bus Pass"/>
 
             <View
                 android:layout_width="match_parent"
