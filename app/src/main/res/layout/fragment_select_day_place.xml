@@ -20,8 +20,8 @@
             android:layout_width="160dp"
             android:layout_height="80dp"
             android:layout_marginTop="35dp"
-            android:text="Set Reminder"
-            android:layout_marginLeft="20dp"
+            android:text="@string/set_reminder"
+            android:layout_marginStart="20dp"
             android:textColor="@color/colorPrimaryDark" />
 
     </LinearLayout>
@@ -34,8 +34,8 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:text="Select Day"
-            android:layout_marginLeft="20dp"/>
+            android:text="@string/select_day"
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
 
@@ -51,8 +51,8 @@
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_marginTop="180dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/rounded">
 
 
@@ -66,9 +66,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Monday"
+                    android:text="@string/monday"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -76,9 +76,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Tuesday"
+                    android:text="@string/tuesday"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -86,9 +86,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Wednesday"
+                    android:text="@string/wednesday"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -96,9 +96,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Thursday"
+                    android:text="@string/thursday"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -106,9 +106,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Friday"
+                    android:text="@string/friday"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -116,9 +116,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Saturday"
+                    android:text="@string/saturday"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -126,9 +126,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Sunday"
+                    android:text="@string/sunday"
                     android:textColor="#FF0000" />
 
             </LinearLayout>
@@ -141,7 +141,7 @@
             android:layout_height="60dp"
             android:layout_gravity="top"
             android:layout_marginTop="190dp"
-            android:text="Select"
+            android:text="@string/select1"
             />
 
     </LinearLayout>
@@ -154,8 +154,8 @@
         <TextView
             android:layout_width="120dp"
             android:layout_height="40dp"
-            android:text="Select Arrival"
-            android:layout_marginLeft="20dp"/>
+            android:text="@string/select_arrival"
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
 
@@ -170,8 +170,8 @@
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_marginTop="180dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/rounded">
 
 
@@ -185,9 +185,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Ajmeri gate"
+                    android:text="@string/ajmeri_gate1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -195,9 +195,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="LNMIIT"
+                    android:text="@string/lnmiit1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -205,9 +205,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Raja park"
+                    android:text="@string/raja_park1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -215,9 +215,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Nai ki thadi"
+                    android:text="@string/nai_ki_thadi1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -225,9 +225,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Chomu Puliya"
+                    android:text="@string/chomu_puliya1"
                     android:textColor="#FF0000" />
 
             </LinearLayout>
@@ -240,7 +240,7 @@
             android:layout_height="60dp"
             android:layout_gravity="top"
             android:layout_marginTop="190dp"
-            android:text="Select"
+            android:text="@string/select1"
             />
 
     </LinearLayout>
@@ -253,8 +253,8 @@
         <TextView
             android:layout_width="180dp"
             android:layout_height="40dp"
-            android:text="Select Destination"
-            android:layout_marginLeft="20dp"/>
+            android:text="@string/select_destination"
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
 
@@ -269,9 +269,9 @@
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_marginTop="180dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
             android:background="@drawable/rounded"
-            android:layout_marginLeft="20dp">
+            android:layout_marginStart="20dp">
 
 
             <LinearLayout
@@ -284,9 +284,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Ajmeri gate"
+                    android:text="@string/ajmeri_gate1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -294,9 +294,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="LNMIIT"
+                    android:text="@string/lnmiit1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -304,9 +304,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Raja park"
+                    android:text="@string/raja_park1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -314,9 +314,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Nai ki thadi"
+                    android:text="@string/nai_ki_thadi1"
                     android:textColor="#FF0000" />
 
                 <Button
@@ -324,9 +324,9 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/white"
-                    android:text="Chomu puliya"
+                    android:text="@string/chomu_puliya1"
                     android:textColor="#FF0000" />
 
             </LinearLayout>
@@ -339,7 +339,7 @@
             android:layout_height="60dp"
             android:layout_gravity="top"
             android:layout_marginTop="190dp"
-            android:text="Select"
+            android:text="@string/select1"
             />
 
     </LinearLayout>
@@ -348,10 +348,10 @@
         android:id="@+id/btgo"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="520dp"
         android:background="@drawable/rounded1"
-        android:text="Proceed" />
+        android:text="@string/proceed1" />
 
 
 </RelativeLayout>

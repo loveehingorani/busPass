@@ -51,4 +51,22 @@
     <string name="cost">25</string>
     <string name="proceed_to_pay">Proceed To Pay</string>
     <string name="count">1</string>
+    <string name="proceed1">Proceed</string>
+    <string name="select1">Select</string>
+    <string name="chomu_puliya1">Chomu puliya</string>
+    <string name="nai_ki_thadi1">Nai ki thadi</string>
+    <string name="raja_park1">Raja park</string>
+    <string name="lnmiit1">LNMIIT</string>
+    <string name="ajmeri_gate1">Ajmeri gate</string>
+    <string name="select_destination">Destination</string>
+    <string name="select_arrival">Starting Point</string>
+    <string name="sunday">Sunday</string>
+    <string name="saturday">Saturday</string>
+    <string name="friday">Friday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="select_day">Select Day</string>
+    <string name="set_reminder">Set Reminder</string>
 </resources>
