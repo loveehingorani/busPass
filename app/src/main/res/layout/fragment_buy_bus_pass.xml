@@ -7,7 +7,16 @@
     android:background="@android:color/background_light"
     tools:context=".BuyBusPassFragment">
 
-    <TextView
+
+
+    <ImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/bus2"
+        android:background="#000"/>
+
+        <TextView
         android:layout_marginTop="20sp"
 
         android:layout_width="match_parent"
@@ -15,10 +24,10 @@
         android:gravity="center"
         android:fontFamily="sans-serif-black"
         android:text="@string/buy_bus_pass"
-        android:textSize="50sp"
+        android:textSize="20sp"
         />
     <TextView
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/specify_quantity"
@@ -64,7 +73,7 @@
             android:text="@string/plus"
             android:textColor="@android:color/background_light"
             android:id="@+id/plus"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:textStyle="bold"
             android:onClick="doPlus"
             android:background="@android:color/holo_red_light"
@@ -81,7 +90,7 @@
         android:text="@string/max_quantity_10"
         android:textSize="20sp"
         android:fontFamily="serif"
-        android:layout_marginBottom="60sp"
+        android:layout_marginBottom="10sp"
         android:textColor="@android:color/holo_red_light"
 
         />
@@ -91,7 +100,7 @@
         android:gravity="center"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -105,7 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-black"
             android:textSize="30sp"
             android:text="@string/bus_pass"
@@ -124,7 +133,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:gravity="center"
         android:layout_height="wrap_content">
         <TextView
