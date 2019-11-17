@@ -39,4 +39,16 @@
     <string name="payment_status">Payment Status:</string>
     <string name="prog">0%</string>
     <string name="todo1">TODO</string>
+    <string name="buy_bus_pass">BUY BUS PASS</string>
+    <string name="specify_quantity">SPECIFY QUANTITY</string>
+    <string name="busP_Count">1</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="max_quantity_10">MAX QUANTITY: 10</string>
+    <string name="total">TOTAL</string>
+    <string name="bus_pass">BUS PASS : </string>
+    <string name="total_price_rs">TOTAL PRICE : ₹ </string>
+    <string name="cost">25</string>
+    <string name="proceed_to_pay">Proceed To Pay</string>
+    <string name="count">1</string>
 </resources>

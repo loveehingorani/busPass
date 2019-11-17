@@ -4,25 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/background_light"
     tools:context=".BuyBusPassFragment">
 
     <TextView
         android:layout_marginTop="20sp"
-        android:layout_marginLeft="10sp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:fontFamily="sans-serif-black"
-        android:text="Buy Bus Pass"
-        android:textSize="40sp"
+        android:text="@string/buy_bus_pass"
+        android:textSize="50sp"
         />
     <TextView
         android:layout_marginTop="50sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Specify Quantity"
-        android:textSize="40sp"
-        android:fontFamily="cursive"
-
+        android:text="@string/specify_quantity"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black"
         android:layout_gravity="center"
 
         />
@@ -37,28 +39,35 @@
         <Button
             android:layout_width="50sp"
             android:layout_height="wrap_content"
-            android:text="-"
+            android:text="@string/minus"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
             android:id="@+id/minus"
+            android:textColor="@android:color/background_light"
             android:onClick="doMinus"
             android:lineHeight="@android:dimen/thumbnail_height"
-            android:background="@android:color/background_light"
+            android:background="@android:color/holo_red_light"
             android:textSize="25sp"
             ></Button>
         <TextView
             android:layout_width="40sp"
             android:layout_height="wrap_content"
-            android:text="1"
+            android:text="@string/busP_Count"
             android:id="@+id/quantity"
-            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
             android:gravity="center"
             />
         <Button
             android:layout_width="50sp"
             android:layout_height="wrap_content"
-            android:text="+"
+            android:text="@string/plus"
+            android:textColor="@android:color/background_light"
             android:id="@+id/plus"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
             android:onClick="doPlus"
-            android:background="@android:color/background_light"
+            android:background="@android:color/holo_red_light"
             android:textSize="25sp"
 
             />
@@ -68,8 +77,10 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Max Quantity: 10"
+        android:padding="10sp"
+        android:text="@string/max_quantity_10"
         android:textSize="20sp"
+        android:fontFamily="serif"
         android:layout_marginBottom="60sp"
         android:textColor="@android:color/holo_red_light"
 
@@ -77,47 +88,60 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="20dp"
         >
         <TextView
             android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
             android:textSize="30sp"
-            android:text="Total "
+            android:text="@string/total"
             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30sp"
+            android:text="@string/bus_pass"
+            />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
             android:id="@+id/total_pass"
-            android:text="1"
+            android:text="@string/count"
             />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text=" Bus Pass"
-            />
+
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_margin="20dp"
+        android:gravity="center"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:text="Total Price : Rs "
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/total_price_rs"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
             android:id="@+id/total_price"
-            android:text="25"
+            android:text="@string/cost"
             />
     </LinearLayout>
 
@@ -130,14 +154,16 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
+            android:padding="10dp"
             android:layout_marginBottom="0dp"
-            android:background="@android:color/holo_blue_bright"
+            android:background="@android:color/holo_red_light"
             android:gravity="center"
+            android:fontFamily="sans-serif-black"
             android:id="@+id/proceed_to_pay"
-            android:text="Proceed To Pay"
+            android:text="@string/proceed_to_pay"
 
             android:textColor="@android:color/background_light"
-            android:textSize="30sp" />
+            android:textSize="40sp" />
 
     </RelativeLayout>
 
