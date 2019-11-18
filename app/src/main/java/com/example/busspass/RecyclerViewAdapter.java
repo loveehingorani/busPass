@@ -214,7 +214,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     if(itemList.get(position).getDay().equals("Sunday")) {
                         sundaydb.updatedata(itemList.get(position).getId(),  itemList.get(position).getSetReminder(),false);
                         Toast.makeText(mContext, "Notification Off", Toast.LENGTH_LONG).show();
-                    }
+git add                    }
                 }
             }
         });
