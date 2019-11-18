@@ -2,20 +2,30 @@ package com.example.busspass;
 
 public class BusInfo {
 
+
+    private String id;
+    private String day;
     private String time;
     private String start;
     private String end;
     private String bus;
-    private boolean setReminder;
-    private boolean notifyMe;
+    private Boolean setReminder;
+    private Boolean notifyMe;
 
-    public BusInfo(String time, String start, String end,String bus) {
+    public BusInfo(String id, String time, String start, String end,String bus,String day,Boolean setReminder,Boolean notifyMe) {
+        this.id=id;
         this.time= time;
         this.start =start;
         this.end = end;
         this.bus = bus;
+        this.day=day;
+        this.setReminder=setReminder;
+        this.notifyMe=notifyMe;
     }
 
+    public String getId() {
+        return id;
+    }
     public String getTime() {
         return time;
     }
@@ -28,7 +38,10 @@ public class BusInfo {
     public String getBus() {
         return bus;
     }
-    public boolean getSetReminder() {return setReminder;}
-    public boolean getNotifyMe() {return notifyMe;}
+    public String getDay() {
+        return day;
+    }
+    public Boolean getSetReminder() {return setReminder;}
+    public Boolean getNotifyMe() {return notifyMe;}
 
 }
