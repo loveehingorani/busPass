@@ -16,6 +16,7 @@ import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public  static  String mEmail,mUserName;
     private static final int RC_SIGN_IN = 1;
     FirebaseAuth.AuthStateListener authStateListener;
     FirebaseAuth auth;
@@ -31,6 +32,9 @@ public class LoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         authStateListener = firebaseAuth -> {
             FirebaseUser user = firebaseAuth.getCurrentUser();
+            mEmail=user.getEmail();
+            mUserName=user.getDisplayName();
+
             if(user == null) {
                 AuthUI.getInstance().signOut(getBaseContext());
                 startActivityForResult(
@@ -79,4 +83,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onBackPressed();
         finish();
     }
+
+    public  static String getEmail(){return mEmail;}
+    public  static  String getUserName(){return mUserName;}
 }

@@ -19,6 +19,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -26,7 +27,7 @@ public class MainPageFragment extends Fragment {
 
     MondayDatabaseHelper mondaydb;
     private CardView mBuyPass,mTransactions,mCallButton,mReminder;
-    //private Button mViewAll;
+    private TextView mShowEmail,mShowName;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,7 +38,11 @@ public class MainPageFragment extends Fragment {
         mBuyPass=v.findViewById(R.id.buyPass);
         mondaydb=new MondayDatabaseHelper(getContext());
         //mViewAll=v.findViewById(R.id.viewAll);
+        mShowEmail=(TextView)v.findViewById(R.id.showemail);
+        mShowName=v.findViewById(R.id.showname);
 
+        mShowEmail.setText(LoginActivity.getEmail());
+        mShowName.setText(LoginActivity.getUserName());
         mCallButton=v.findViewById(R.id.button_call);
        // mPdfButton=v.findViewById(R.id.button1);
         mTransactions=v.findViewById(R.id.transactions);

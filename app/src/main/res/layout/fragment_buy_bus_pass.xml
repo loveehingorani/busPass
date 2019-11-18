@@ -51,15 +51,18 @@
                 android:onClick="doMinus"
                 android:id="@+id/minus"
                 android:layout_marginLeft="30dp"
-                android:background="@drawable/ic_exposure_neg_1_black_24dp"/>
+                android:background="@drawable/minus"/>
 
             <TextView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="45dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/border"
                 android:id="@+id/quantity"
                 android:text="1"
-                android:textSize="30dp"
+
+                android:textSize="28dp"
                 android:layout_marginLeft="10dp"/>
 
             <Button
@@ -69,7 +72,7 @@
                 android:id="@+id/plus"
                 android:layout_marginTop="40dp"
                 android:layout_marginLeft="10dp"
-                android:background="@drawable/ic_plus_one_black_24dp"/>
+                android:background="@drawable/plus"/>
 
 
         </LinearLayout>
