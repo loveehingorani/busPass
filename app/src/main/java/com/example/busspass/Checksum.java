@@ -124,9 +124,11 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
             //Paytm transaction is successful.
             paymentStatusDisplay.setText("Payment Status: Money deducted from paytm. Please wait while we update your bus pass details");
             //TODO: Update user bus pass details to transactions and firebase
-            //Call the function below AFTER details are updated
-            paymentStatusDisplay.setText("Payment Status: Success");
-
+            String transactionAmount= bundle.get("TXNAMOUNT").toString();
+            String paymentMode= bundle.get("PAYMENTMODE").toString();
+            String datetime= bundle.get("TXNDATE").toString();
+            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
+            "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
         }
         if(bundle.get("STATUS").equals("TXN_FAILURE"))
         paymentStatusDisplay.setText("Payment Status: failure");
