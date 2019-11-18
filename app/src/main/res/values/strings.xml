@@ -70,4 +70,12 @@
     <string name="thursday">Thursday</string>
     <string name="select_day">Select Day</string>
     <string name="set_reminder">Set Reminder</string>
+    <string name="bus_pass1">Bus Pass</string>
+    <string name="buy_your_bus_pass_here">Buy your Bus Pass here</string>
+    <string name="my_transactions">My Transactions</string>
+    <string name="my_transaction_history">My Transaction history</string>
+    <string name="remind_me">Remind Me</string>
+    <string name="remind_me_about_bus_time">Remind me about bus time</string>
+    <string name="call_main_gate">Call Main Gate</string>
+    <string name="call_main_gate_for_more_bus_details">Call Main Gate for more bus details</string>
 </resources>
