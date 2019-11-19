@@ -14,7 +14,8 @@
     <item
         android:icon="@drawable/ic_info_black_24dp" android:id="@+id/buybuspass" android:title="Buy Bus Pass" />
     <item android:id="@+id/transactions" android:title="Transactions" />
-    <item android:id="@+id/reminder" android:title="Reminder" />
+    <item android:id="@+id/reminder"
+        android:icon="@drawable/ic_add_alarm_black_24dp" android:title="Reminder" />
     <item android:id="@+id/busTimePdf" android:title="Bus Time Table" />
     </group>
 
