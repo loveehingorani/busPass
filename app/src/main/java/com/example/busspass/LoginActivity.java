@@ -32,8 +32,8 @@ public class LoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         authStateListener = firebaseAuth -> {
             FirebaseUser user = firebaseAuth.getCurrentUser();
-            mEmail=user.getEmail();
-            mUserName=user.getDisplayName();
+//            mEmail=user.getEmail();
+           // mUserName=user.getDisplayName();
 
             if(user == null) {
                 AuthUI.getInstance().signOut(getBaseContext());
