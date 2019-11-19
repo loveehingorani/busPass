@@ -12,7 +12,7 @@
         android:title="Home"
         />
     <item
-        android:icon="@drawable/buy" android:id="@+id/buybuspass" android:title="Buy Bus Pass" />
+        android:icon="@drawable/buy4" android:id="@+id/buybuspass" android:title="Buy Bus Pass" />
     <item android:id="@+id/transactions" android:icon="@drawable/transaction" android:title="Transactions" />
     <item android:id="@+id/reminder"
         android:icon="@drawable/ic_add_alarm_black_24dp" android:title="Reminder" />
