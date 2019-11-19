@@ -38,11 +38,11 @@ public class MainPageFragment extends Fragment {
         mBuyPass=v.findViewById(R.id.buyPass);
         mondaydb=new MondayDatabaseHelper(getContext());
         //mViewAll=v.findViewById(R.id.viewAll);
-        mShowEmail=(TextView)v.findViewById(R.id.showemail);
-        mShowName=v.findViewById(R.id.showname);
+        //mShowEmail=(TextView)v.findViewById(R.id.showemail);
+       // mShowName=v.findViewById(R.id.showname);
 
-        mShowEmail.setText(LoginActivity.getEmail());
-        mShowName.setText(LoginActivity.getUserName());
+       // mShowEmail.setText(LoginActivity.getEmail());
+       // mShowName.setText(LoginActivity.getUserName());
         mCallButton=v.findViewById(R.id.button_call);
        // mPdfButton=v.findViewById(R.id.button1);
         mTransactions=v.findViewById(R.id.transactions);
