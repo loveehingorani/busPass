@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity   {
 
         navController=Navigation.findNavController(this,R.id.nav_host);
         appBarConfiguration =
-                new AppBarConfiguration.Builder(new int[]{R.id.home,R.id.buybuspass,R.id.transactions,R.id.busTimePdf,R.id.reminder,R.id.logout})
+                new AppBarConfiguration.Builder(new int[]{R.id.home,R.id.buybuspass,R.id.transactions,R.id.busTimePdf,R.id.reminder,R.id.logout,R.id.aboutus})
                         .setDrawerLayout(mDrawerLayout)
                         .build();
         mondaydb.insertData("1","7:00 AM", "Ajmeri Gate", "LNMIIT", "LNMIIT Bus Service",false,false);

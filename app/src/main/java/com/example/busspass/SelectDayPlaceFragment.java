@@ -1,6 +1,7 @@
 package com.example.busspass;
 
 
+import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
@@ -61,6 +62,14 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv1.setText("Monday");
                 tv1.setTypeface(null, Typeface.BOLD);
                 stv1 = "Monday";
+                bt2.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt3.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt4.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt5.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt6.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt7.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt1.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
             }
 
         });
@@ -71,6 +80,13 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv1.setText("Tuesday");
                 tv1.setTypeface(null, Typeface.BOLD);
                 stv1 = "Tuesday";
+                bt1.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt3.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt4.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt5.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt6.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt7.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt2.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -81,6 +97,13 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv1.setText("Wednesday");
                 tv1.setTypeface(null, Typeface.BOLD);
                 stv1 = "Wednesday";
+                bt1.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt2.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt4.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt5.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt6.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt7.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt3.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -91,6 +114,13 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv1.setText("Thursday");
                 tv1.setTypeface(null, Typeface.BOLD);
                 stv1 = "Thursday";
+                bt1.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt2.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt3.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt5.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt6.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt7.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt4.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -101,6 +131,13 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv1.setText("Friday");
                 tv1.setTypeface(null, Typeface.BOLD);
                 stv1 = "Friday";
+                bt1.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt2.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt3.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt4.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt6.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt7.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt5.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -112,6 +149,13 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv1.setText("Saturday");
                 tv1.setTypeface(null, Typeface.BOLD);
                 stv1 = "Saturday";
+                bt1.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt2.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt3.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt4.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt5.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt7.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt6.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -122,6 +166,13 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv1.setText("Sunday");
                 tv1.setTypeface(null, Typeface.BOLD);
                 stv1 = "Sunday";
+                bt1.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt2.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt3.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt4.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt5.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt6.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt7.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -132,6 +183,11 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv2.setText("Ajmeri Gate");
                 tv2.setTypeface(null, Typeface.BOLD);
                 stv2 = "Ajmeri Gate";
+                bt12.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt13.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt14.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt15.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt11.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -142,6 +198,12 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv2.setText("LNMIIT");
                 tv2.setTypeface(null, Typeface.BOLD);
                 stv2 = "LNMIIT";
+                bt11.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt13.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt14.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt15.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+
+                bt12.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -152,6 +214,12 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv2.setText("Raja Park");
                 tv2.setTypeface(null, Typeface.BOLD);
                 stv2 = "Raja Park";
+                bt11.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt12.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt14.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt15.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+
+                bt13.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -162,6 +230,11 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv2.setText("Nai Ki Thadi");
                 tv2.setTypeface(null, Typeface.BOLD);
                 stv2 = "Nai Ki Thadi";
+                bt11.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt12.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt13.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt15.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt14.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -172,6 +245,11 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv2.setText("Chomu Puliya");
                 tv2.setTypeface(null, Typeface.BOLD);
                 stv2 = "Chomu Puliya";
+                bt11.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt12.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt13.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt14.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt15.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -182,6 +260,12 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv3.setText("Ajmeri Gate");
                 tv3.setTypeface(null, Typeface.BOLD);
                 stv3 = "Ajmeri Gate";
+                bt22.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt23.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt24.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt25.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+
+                bt21.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -192,6 +276,11 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv3.setText("LNMIIT");
                 tv3.setTypeface(null, Typeface.BOLD);
                 stv3 = "LNMIIT";
+                bt21.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt23.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt24.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt25.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt22.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -202,6 +291,11 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv3.setText("Raja Park");
                 tv3.setTypeface(null, Typeface.BOLD);
                 stv3 = "Raja Park";
+                bt21.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt22.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt24.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt25.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt23.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -212,6 +306,11 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv3.setText("Nai Ki Thadi");
                 tv3.setTypeface(null, Typeface.BOLD);
                 stv3 = "Nai Ki Thadi";
+                bt21.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt22.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt23.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt25.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt24.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -222,6 +321,11 @@ public class SelectDayPlaceFragment extends Fragment {
                 tv3.setText("Chomu Puliya");
                 tv3.setTypeface(null, Typeface.BOLD);
                 stv3 = "Chomu Puliya";
+                bt21.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt22.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt23.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt24.setPaintFlags(bt1.getPaintFlags() & (~ Paint.UNDERLINE_TEXT_FLAG));
+                bt25.setPaintFlags(bt1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
             }
 
         });
@@ -230,26 +334,25 @@ public class SelectDayPlaceFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if(stv1==null||stv2==null||stv3==null)
-                    Toast.makeText(getActivity(),"Please Select All The Options",Toast.LENGTH_SHORT).show();
-
-                else if(stv1 == "Sunday" && stv2 == "Chomu Puliya"){
-                    Toast.makeText(getActivity(),"No Bus Available",Toast.LENGTH_SHORT).show();
-                }
-
-                else if(stv1 == "Sunday" && stv3 == "Chomu Puliya"){
-                    Toast.makeText(getActivity(),"No Bus Available",Toast.LENGTH_SHORT).show();
-                }
-
-                else if(stv1 == "Sunday" && stv3 == "Nai Ki Thadi"){
-                    Toast.makeText(getActivity(),"No Bus Available",Toast.LENGTH_SHORT).show();
-                }
-
-                else if(stv1 == "Sunday" && stv2 == "Nai Ki Thadi"){
-                    Toast.makeText(getActivity(),"No Bus Available",Toast.LENGTH_SHORT).show();
-                }
-
-                else if(stv2 == stv3){
-                    Toast.makeText(getActivity(),"Select a valid option",Toast.LENGTH_SHORT).show();
+                                 Toast.makeText(getActivity(),"Please Select All The Options",Toast.LENGTH_SHORT).show();
+                else if (stv1 == "Sunday" && stv2 == "Chomu Puliya") {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
+                } else if (stv1 == "Sunday" && stv3 == "Chomu Puliya") {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
+                } else if (stv1 == "Sunday" && stv3 == "Nai Ki Thadi") {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
+                } else if (stv1 == "Sunday" && stv2 == "Nai Ki Thadi") {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
+                } else if (stv2 == stv3) {
+                    Toast.makeText(getActivity(), "Select a valid option", Toast.LENGTH_SHORT).show();
+                } else if (stv2 == "Raja Park" && (stv3 == "Ajmeri Gate" || stv3 == "Chomu Puliya" || stv3 == "Nai Ki Thadi")) {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
+                } else if ((stv3 == "Raja Park" || stv3 == "Chomu Puliya" || stv3 == "Nai Ki Thadi") && stv2 == "Ajmeri Gate") {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
+                } else if (stv2 == "Chomu Puliya" && (stv3 == "Ajmeri Gate" || stv3 == "Raja Park" || stv3 == "Nai Ki Thadi")) {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
+                } else if ((stv3 == "Ajmeri Gate" || stv3 == "Chomu Puliya" || stv3 == "Raja Park") && stv2 == "Nai Ki Thadi") {
+                    Toast.makeText(getActivity(), "No Bus Available", Toast.LENGTH_SHORT).show();
                 }
 
                 else{

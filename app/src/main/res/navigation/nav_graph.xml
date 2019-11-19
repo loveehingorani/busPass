@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_home_to_reminder"
             app:destination="@id/reminder" />
+        <action
+            android:id="@+id/action_home_to_aboutUsFragment"
+            app:destination="@id/aboutus" />
     </fragment>
     <fragment
         android:id="@id/buybuspass"
@@ -59,4 +62,8 @@
             android:id="@+id/action_selectDayPlaceFragment_to_reminder1"
             app:destination="@id/reminder1" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutus"
+        android:name="com.example.busspass.AboutUsFragment"
+        android:label="AboutUsFragment" />
 </navigation>
