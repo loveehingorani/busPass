@@ -16,7 +16,7 @@
     <item android:id="@+id/transactions" android:title="Transactions" />
     <item android:id="@+id/reminder"
         android:icon="@drawable/ic_add_alarm_black_24dp" android:title="Reminder" />
-    <item android:id="@+id/busTimePdf" android:title="Bus Time Table" />
+    <item android:id="@+id/busTimePdf" android:icon="@drawable/ic_picture_as_pdf_black_24dp" android:title="Bus Time Table" />
     </group>
 
     <group
@@ -24,9 +24,7 @@
         android:id="@+id/group2">
         <item android:id="@+id/myaccount" android:title="My Account"  />
         <item android:id="@+id/aboutus" android:title="About Us" />
-        <item android:id="@+id/settings"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="Settings" />
+
         <item android:id="@+id/logout" android:title="Logout" />
 
     </group>
