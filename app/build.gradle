@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services'
 
 android {
@@ -51,6 +53,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.1.0'
     implementation 'androidx.navigation:navigation-ui:2.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'com.google.firebase:firebase-firestore:21.3.0'
     testImplementation 'junit:junit:4.12'
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
@@ -63,6 +66,9 @@ dependencies {
     implementation('com.paytm:pgplussdk:1.2.3') {
         transitive = true;
     }
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 apply plugin: 'com.android.application'
 

@@ -11,33 +11,46 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
+
 import java.util.ArrayList;
 
 
 public class TransactionFragment extends Fragment {
 
+    private ArrayList<Transactions> transactionList;
+    private TransactionRecyclerAdapter transactionRecyclerAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v =inflater.inflate(R.layout.fragment_transaction,container,false);
 
-
-        ArrayList<TransactionInfo> transactionList=new ArrayList<TransactionInfo>();
-        transactionList.add(new TransactionInfo("26 oct","4:00 PM","25"));
-        transactionList.add(new TransactionInfo("26 oct","4:00 PM","25"));
-        transactionList.add(new TransactionInfo("26 oct","4:00 PM","25"));
-        transactionList.add(new TransactionInfo("26 oct","4:00 PM","25"));
-        transactionList.add(new TransactionInfo("26 oct","4:00 PM","25"));
-        transactionList.add(new TransactionInfo("26 oct","4:00 PM","25"));
-
-
-        RecyclerView recyclerView=(RecyclerView) v.findViewById(R.id.recyclerView1);
-
+        transactionList = new ArrayList<>();
+        transactionRecyclerAdapter = new TransactionRecyclerAdapter(getContext(), transactionList);
+        RecyclerView recyclerView = v.findViewById(R.id.recyclerView1);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new TransactionRecyclerAdapter(getContext(),transactionList));
-
+        recyclerView.setAdapter(transactionRecyclerAdapter);
+        updateData();
         return v;
     }
 
+    private void updateData(){
+        FirebaseFirestore.getInstance()
+                .collection("Transactions")
+                .whereEqualTo("uid", FirebaseAuth.getInstance().getCurrentUser().getUid())
+                .get()
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+                    transactionList.clear();
+                    for(DocumentSnapshot documentSnapshot: queryDocumentSnapshots){
+                        Transactions transactions = documentSnapshot.toObject(Transactions.class);
+                        transactionList.add(transactions);
+                    }
+                    transactionRecyclerAdapter.notifyDataSetChanged();
+                });
+    }
 }

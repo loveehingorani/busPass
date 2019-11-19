@@ -8,6 +8,9 @@ import android.util.Log;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.google.firebase.Timestamp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.paytm.pgsdk.PaytmOrder;
 
 import com.paytm.pgsdk.PaytmPGService;
@@ -121,6 +124,15 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
     public void onTransactionResponse(Bundle bundle) {
         if(bundle.get("STATUS").equals("TXN_SUCCESS"))
         {
+            Transactions transactions = new Transactions(FirebaseAuth.getInstance().getCurrentUser().getUid(),
+                    Timestamp.now(),
+                    bundle.getString("ORDERID"),
+                    bundle.getString("TXNAMOUNT"));
+            FirebaseFirestore.getInstance()
+                    .collection("Transactions")
+                    .document(transactions.getTransactionId())
+                    .set(transactions);
+            Log.e("", bundle.toString());
             //Paytm transaction is successful.
             paymentStatusDisplay.setText("Payment Status: Money deducted from paytm. Please wait while we update your bus pass details");
             //TODO: Update user bus pass details to transactions and firebase
@@ -129,6 +141,8 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
             String datetime= bundle.get("TXNDATE").toString();
             paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
             "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
+            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
+                    "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
         }
         if(bundle.get("STATUS").equals("TXN_FAILURE"))
         paymentStatusDisplay.setText("Payment Status: failure");

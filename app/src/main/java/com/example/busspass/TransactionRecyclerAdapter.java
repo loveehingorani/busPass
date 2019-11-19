@@ -4,12 +4,15 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.Timestamp;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class TransactionRecyclerAdapter extends RecyclerView.Adapter<TransactionRecyclerAdapter.RecycleViewHolder> {
@@ -17,8 +20,8 @@ public class TransactionRecyclerAdapter extends RecyclerView.Adapter<Transaction
 
 
     Context mContext;
-    List<TransactionInfo> itemList;
-    public TransactionRecyclerAdapter(Context context,List<TransactionInfo> itemList)
+    List<Transactions> itemList;
+    public TransactionRecyclerAdapter(Context context,List<Transactions> itemList)
     {
         mContext=context;
         this.itemList=itemList;
@@ -35,12 +38,8 @@ public class TransactionRecyclerAdapter extends RecyclerView.Adapter<Transaction
 
     @Override
     public void onBindViewHolder(@NonNull RecycleViewHolder holder, int position) {
-        String s1 = itemList.get(position).getTime();
-        holder.time.setText(s1);
-        String s2 = itemList.get(position).getDate();
-        holder.date.setText(s2);
-        String s3 = itemList.get(position).getAmount();
-        holder.amount.setText(s3);
+        holder.date.setText(getDate(itemList.get(position).getTime()));
+        holder.amount.setText(itemList.get(position).getAmount());
     }
 
     @Override
@@ -57,7 +56,14 @@ public class TransactionRecyclerAdapter extends RecyclerView.Adapter<Transaction
              time = (TextView) itemView.findViewById(R.id.time);
              date = (TextView) itemView.findViewById(R.id.date);
             amount = (TextView) itemView.findViewById(R.id.amount);
-
         }
+    }
+
+    private String getDate(Timestamp timestamp){
+        String pattern = "yyyy-MM-dd, hh:mm a";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+        String date = simpleDateFormat.format(timestamp.toDate());
+        return date;
     }
 }
