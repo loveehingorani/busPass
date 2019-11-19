@@ -103,39 +103,39 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     if(itemList.get(position).getDay().equals("Monday")) {
                         mondaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
 //                        new AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay());
-                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())));
+                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                       //  AlarmSetter("11:59 AM","Tuesday",490);
                        Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Tuesday")) {
                         tuesdaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
-                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),29+Integer.parseInt((itemList.get(position).getId())));
+                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),29+Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                       //  AlarmSetter("12:00 PM","Tuesday",489);
                         Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Wednesday")) {
                         wednesdaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
-                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),58+Integer.parseInt((itemList.get(position).getId())));
+                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),58+Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                         Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Thursday")) {
                         thursdaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
-                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),87+Integer.parseInt((itemList.get(position).getId())));
+                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),87+Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                         Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Friday")) {
                         fridaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
-                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),116+Integer.parseInt((itemList.get(position).getId())));
+                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),116+Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                         Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Saturday")) {
                         saturdaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
-                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),145+Integer.parseInt((itemList.get(position).getId())));
+                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),145+Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                         Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Sunday")) {
                         sundaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
-                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),178+Integer.parseInt((itemList.get(position).getId())));
+                        AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),178+Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                         Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
                 }
@@ -272,19 +272,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
 
-
-    public void AlarmSetter(String timeString,String dayString,int id)
+    public void AlarmSetter(String timeString,String dayString,int id,Boolean notifyme)
     {
-
+        varMin=17;
         hourInt=Integer.parseInt(Character.toString(timeString.charAt(0))+Character.toString(timeString.charAt(1)));
-
-
-
         if(timeString.charAt(6)=='P'&&hourInt!=12)
-        {
             hourInt+=12;
 
-        }
         Log.i("timmmmmmmmmmmmmmmmmm","                                hourInt = "+hourInt);
         minuteInt=Integer.parseInt(Character.toString(timeString.charAt(3))+Character.toString(timeString.charAt(4)));
         if((minuteInt-varMin)<0)
@@ -292,47 +286,42 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             hourInt=hourInt-1;
             minuteInt=minuteInt-varMin+60;
         }
-
         else
-        {
             minuteInt=minuteInt-varMin;
-        }
-
+        int updateid=0;
         Log.i("timmmmmmmmmmmmmmmmmm","                                hourInt = "+minuteInt);
-        if(dayString.equals("Sunday")){ dayOfWeek=1;}
-        else if(dayString.equals("Monday")){ dayOfWeek=2;}
-        else if(dayString.equals("Tuesday")){ dayOfWeek=3;}
-        else if(dayString.equals("Wednesday")){ dayOfWeek=4;}
-        else if(dayString.equals("Thursday")){ dayOfWeek=5;}
-        else if(dayString.equals("Friday")){ dayOfWeek=6;}
-        else if(dayString.equals("Saturday")){ dayOfWeek=7;}
+        if(dayString.equals("Sunday")){ dayOfWeek=1; updateid=id-178;}
+        else if(dayString.equals("Monday")){ dayOfWeek=2; updateid=id;}
+        else if(dayString.equals("Tuesday")){ dayOfWeek=3;updateid=id-29;}
+        else if(dayString.equals("Wednesday")){ dayOfWeek=4;updateid=id-58;}
+        else if(dayString.equals("Thursday")){ dayOfWeek=5;updateid=id-87;}
+        else if(dayString.equals("Friday")){ dayOfWeek=6;updateid=id-116;}
+        else if(dayString.equals("Saturday")){ dayOfWeek=7;updateid=id-145;}
         Log.i("timmmmmmmmmmmmmmmmmm","                                hourInt = "+dayOfWeek);
         alarmCalendar= Calendar.getInstance();
-
-        setAlarm(hourInt,minuteInt,dayOfWeek,id);
-
+        setAlarm(hourInt,minuteInt,dayOfWeek,id,dayString,updateid,notifyme);
     }
 
-    public void setAlarm(int hourInt,int minuteInt,int dayOfWeek,int id) {
+    public void setAlarm(int hourInt,int minuteInt,int dayOfWeek,int id,String dayString,int updateid,Boolean notifyme) {
         // Add this day of the week line to your existing code
-
-
         int day = alarmCalendar.get(Calendar.DAY_OF_WEEK);
         if(day > dayOfWeek)
             alarmCalendar.add(Calendar.DATE, day - dayOfWeek);
         else
             alarmCalendar.set(Calendar.DAY_OF_WEEK, dayOfWeek);
+
         alarmCalendar.set(Calendar.HOUR_OF_DAY, hourInt);
         alarmCalendar.set(Calendar.MINUTE, minuteInt);
         alarmCalendar.set(Calendar.SECOND, 0);
-        //alarmCalendar.set(Calendar.AM_PM, amorpm);
 
         long alarmTime = alarmCalendar.getTimeInMillis();
-        //Also change the time to 24 hours.
         AlarmManager alarmMgr = (AlarmManager) mContext.getSystemService(mContext.ALARM_SERVICE);
         Intent intent = new Intent(mContext, AlarmReciever.class);
+        intent.putExtra("id",String.valueOf(updateid));
+        intent.putExtra("day",dayString);
+        intent.putExtra("notify",notifyme);
+
         PendingIntent pendingIntent = PendingIntent.getBroadcast(mContext, id, intent, 0);
-        // cal.add(Calendar.SECOND, 5);
         alarmMgr.setExact(AlarmManager.RTC_WAKEUP, alarmTime,  pendingIntent);
     }
 
