@@ -7,7 +7,7 @@
     <fragment
         android:id="@id/home"
         android:name="com.example.busspass.MainPageFragment"
-        android:label="fragment_main_page"
+        android:label="Bus Pass"
         tools:layout="@layout/fragment_main_page" >
         <action
             android:id="@+id/action_home_to_buybuspass"
@@ -31,32 +31,32 @@
     <fragment
         android:id="@id/buybuspass"
         android:name="com.example.busspass.BuyBusPassFragment"
-        android:label="fragment_buy_bus_pass"
+        android:label="Bus Pass"
         tools:layout="@layout/fragment_buy_bus_pass" />
     <fragment
         android:id="@id/transactions"
         android:name="com.example.busspass.TransactionFragment"
-        android:label="fragment_transaction"
+        android:label="Bus Pass"
         tools:layout="@layout/fragment_transaction" />
     <fragment
         android:id="@+id/busTimePdf"
         android:name="com.example.busspass.PDFFragment"
-        android:label="fragment_pdf"
+        android:label="Bus Time Table"
         tools:layout="@layout/fragment_pdf" />
     <fragment
         android:id="@+id/reminder1"
         android:name="com.example.busspass.ShowSetReminderFragment"
-        android:label="fragment_show_set_reminder"
+        android:label="Bus Pass"
         tools:layout="@layout/fragment_show_set_reminder" />
     <fragment
         android:id="@+id/logout"
         android:name="com.example.busspass.LogoutFragment"
-        android:label="fragment_logout"
+        android:label="Bus Pass"
         tools:layout="@layout/fragment_logout" />
     <fragment
         android:id="@+id/reminder"
         android:name="com.example.busspass.SelectDayPlaceFragment"
-        android:label="fragment_select_day_place"
+        android:label="Bus Pass"
         tools:layout="@layout/fragment_select_day_place" >
         <action
             android:id="@+id/action_selectDayPlaceFragment_to_reminder1"
@@ -65,5 +65,5 @@
     <fragment
         android:id="@+id/aboutus"
         android:name="com.example.busspass.AboutUsFragment"
-        android:label="AboutUsFragment" />
+        android:label="About Us" />
 </navigation>

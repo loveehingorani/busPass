@@ -283,9 +283,10 @@ public class MainActivity extends AppCompatActivity   {
 //        mDrawerLayout.addDrawerListener(mToggle);
 //        mToggle.syncState();
 //
-//      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+     // getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
         //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MainPageFragment()).commit();
         //navigationView.setCheckedItem(R.id.buspass);
+
     }
 
     @Override
@@ -323,5 +324,7 @@ public class MainActivity extends AppCompatActivity   {
 //            return true;
 //        return super.onOptionsItemSelected(item);
 //    }
+
+
 
 }
