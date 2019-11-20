@@ -154,6 +154,8 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
             i.putExtra("checksum_date",datetime);
             i.putExtra("checksum_time",datetime);
             startActivity(i);
+            finish();
+
 
 
         }

@@ -1,6 +1,8 @@
 package com.example.busspass;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,6 +33,7 @@ public class SuccessActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
+
         startActivity(new Intent(SuccessActivity.this,MainActivity.class));
         super.onBackPressed();
     }

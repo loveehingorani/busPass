@@ -12,6 +12,8 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -142,5 +144,6 @@ public class BuyBusPassFragment extends Fragment {
 
         startActivity(callChecksum);
 
+        getActivity().finish();
     }
 }
