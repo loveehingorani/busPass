@@ -61,6 +61,8 @@
                         android:layout_width="120dp"
                         android:layout_height="20dp"
                         android:text="@string/mohit_jindal"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_marginTop="104dp"
                         android:layout_marginStart="20dp"/>
 
@@ -69,6 +71,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
                         android:text="@string/mohit_text"/>
 
                     <TextView
@@ -76,6 +79,8 @@
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
                         android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
@@ -128,6 +133,8 @@
                         android:layout_width="120dp"
                         android:layout_height="20dp"
                         android:text="@string/abhay_aravinda"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_marginTop="104dp"
                         android:layout_marginStart="20dp"/>
 
@@ -136,6 +143,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
                         android:text="@string/abhay_text"/>
 
                     <TextView
@@ -143,6 +151,8 @@
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
                         android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
@@ -195,6 +205,8 @@
                         android:layout_width="120dp"
                         android:layout_height="20dp"
                         android:text="@string/lovee_hingorani"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_marginTop="104dp"
                         android:layout_marginStart="20dp"/>
 
@@ -203,6 +215,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
                         android:text="@string/lovee_text"/>
 
                     <TextView
@@ -210,6 +223,8 @@
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
                         android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
@@ -262,6 +277,8 @@
                         android:layout_width="120dp"
                         android:layout_height="20dp"
                         android:text="@string/ashish_kumar"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_marginTop="104dp"
                         android:layout_marginStart="20dp"/>
 
@@ -270,6 +287,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
                         android:text="@string/ashish_text"/>
 
                     <TextView
@@ -277,6 +295,8 @@
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
                         android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
@@ -330,6 +350,8 @@
                         android:layout_width="120dp"
                         android:layout_height="20dp"
                         android:text="@string/aayush_mishra"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_marginTop="104dp"
                         android:layout_marginStart="20dp"/>
 
@@ -338,6 +360,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
                         android:text="@string/aayush_text"/>
 
                     <TextView
@@ -345,6 +368,8 @@
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
                         android:layout_marginStart="120dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
                         android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
