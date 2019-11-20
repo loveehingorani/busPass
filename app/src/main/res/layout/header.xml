@@ -25,6 +25,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+
                 android:layout_marginTop="40dp"
                 android:layout_marginLeft="30dp"
                 app:cardCornerRadius="30dp"
@@ -41,15 +42,19 @@
 
             <TextView
                 android:layout_width="170dp"
-                android:layout_height="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp"
                 android:layout_marginLeft="120dp"
                 android:text="Welcome"/>
 
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="72dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
                 android:id="@+id/usernamedisplay"
                 android:layout_marginLeft="120dp"
                 android:text="Thanks for using our app"/>

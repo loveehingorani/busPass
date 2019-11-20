@@ -140,6 +140,7 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
             //TODO: Update user bus pass details to transactions and firebase
             String transactionAmount= bundle.get("TXNAMOUNT").toString();
             String paymentMode= bundle.get("PAYMENTMODE").toString();
+            //TextView mAmount=(TextView) findViewById(R.id)
             String datetime= bundle.get("TXNDATE").toString();
             paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
             "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
@@ -173,4 +174,12 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
     public void onTransactionCancel(String s, Bundle bundle) {
         paymentStatusDisplay.setText("Payment Status: Sorry. Transaction failed. "+s);
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(Checksum.this,MainActivity.class));
+        super.onBackPressed();
+    }
 }
+
