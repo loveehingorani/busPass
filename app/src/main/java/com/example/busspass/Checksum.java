@@ -34,7 +34,7 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checksum);
         paymentStatusDisplay =(TextView)findViewById(R.id.PaymentStatusDisplay);
-        paymentStatusDisplay.setText("Payment Status: Pending");
+       paymentStatusDisplay.setText("Payment Status: Pending");
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         Intent intent = getIntent();
         try {
@@ -142,10 +142,20 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
             String paymentMode= bundle.get("PAYMENTMODE").toString();
             //TextView mAmount=(TextView) findViewById(R.id)
             String datetime= bundle.get("TXNDATE").toString();
-            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
-            "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
-            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
-                    "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
+         //   paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
+           // "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
+//            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
+//                    "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
+            Intent i=new Intent(Checksum.this,SuccessActivity.class);
+
+           // Bundle args=new Bundle();
+            i.putExtra("checksum_amount",transactionAmount);
+            i.putExtra("checksum_mode",paymentMode);
+            i.putExtra("checksum_date",datetime);
+            i.putExtra("checksum_time",datetime);
+            startActivity(i);
+
+
         }
         if(bundle.get("STATUS").equals("TXN_FAILURE"))
         paymentStatusDisplay.setText("Payment Status: failure");

@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity   {
         mDrawerLayout=(DrawerLayout) findViewById(R.id.drawerLayout);
         NavigationView navigationView=(NavigationView) findViewById(R.id.nav_view);
       // navigationView.setNavigationItemSelectedListener(this);
-        String s="ddfsf";
+
         mUserName=(TextView) findViewById(R.id.usernamedisplay);
        // mUserName.setText();
         View headView =navigationView.getHeaderView(0);

@@ -51,13 +51,13 @@
 
             <TextView
                 android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="72dp"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp"
                 android:id="@+id/usernamedisplay"
                 android:layout_marginLeft="120dp"
-                android:text="Thanks for using our app"/>
+                android:text="Thanks "/>
 
 
         </RelativeLayout>
