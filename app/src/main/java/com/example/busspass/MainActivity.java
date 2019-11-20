@@ -20,12 +20,14 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity   {
 
+    private TextView mUserName;
     private DrawerLayout mDrawerLayout;
     private NavController navController;
     MondayDatabaseHelper mondaydb;
@@ -53,6 +55,13 @@ public class MainActivity extends AppCompatActivity   {
         NavigationView navigationView=(NavigationView) findViewById(R.id.nav_view);
       // navigationView.setNavigationItemSelectedListener(this);
 
+        mUserName=(TextView) findViewById(R.id.usernamedisplay);
+       // mUserName.setText();
+        View headView =navigationView.getHeaderView(0);
+
+        mUserName=(TextView) headView.findViewById(R.id.usernamedisplay);
+
+        mUserName.setText(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
         navController=Navigation.findNavController(this,R.id.nav_host);
         appBarConfiguration =
                 new AppBarConfiguration.Builder(new int[]{R.id.home,R.id.buybuspass,R.id.transactions,R.id.busTimePdf,R.id.reminder,R.id.logout,R.id.aboutus})

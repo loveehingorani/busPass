@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 public class Checksum extends AppCompatActivity implements PaytmPaymentTransactionCallback {
     String customerId="", orderId="", merchantId = "BUXzaY54718402638352";
@@ -33,7 +34,7 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checksum);
         paymentStatusDisplay =(TextView)findViewById(R.id.PaymentStatusDisplay);
-        paymentStatusDisplay.setText("Payment Status: Pending");
+       paymentStatusDisplay.setText("Payment Status: Pending");
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         Intent intent = getIntent();
         try {
@@ -124,6 +125,7 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
     public void onTransactionResponse(Bundle bundle) {
         if(bundle.get("STATUS").equals("TXN_SUCCESS"))
         {
+
             Transactions transactions = new Transactions(FirebaseAuth.getInstance().getCurrentUser().getUid(),
                     Timestamp.now(),
                     bundle.getString("ORDERID"),
@@ -138,11 +140,24 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
             //TODO: Update user bus pass details to transactions and firebase
             String transactionAmount= bundle.get("TXNAMOUNT").toString();
             String paymentMode= bundle.get("PAYMENTMODE").toString();
+            //TextView mAmount=(TextView) findViewById(R.id)
             String datetime= bundle.get("TXNDATE").toString();
-            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
-            "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
-            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
-                    "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
+         //   paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
+           // "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
+//            paymentStatusDisplay.setText("Payment Status: Success\n Amount="+transactionAmount+
+//                    "\nPaymentMode="+paymentMode+"\nDatetime="+datetime);
+            Intent i=new Intent(Checksum.this,SuccessActivity.class);
+
+           // Bundle args=new Bundle();
+            i.putExtra("checksum_amount",transactionAmount);
+            i.putExtra("checksum_mode",paymentMode);
+            i.putExtra("checksum_date",datetime);
+            i.putExtra("checksum_time",datetime);
+            startActivity(i);
+            finish();
+
+
+
         }
         if(bundle.get("STATUS").equals("TXN_FAILURE"))
         paymentStatusDisplay.setText("Payment Status: failure");
@@ -171,4 +186,12 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
     public void onTransactionCancel(String s, Bundle bundle) {
         paymentStatusDisplay.setText("Payment Status: Sorry. Transaction failed. "+s);
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(Checksum.this,MainActivity.class));
+        super.onBackPressed();
+    }
 }
+

@@ -38,7 +38,7 @@ public class AlarmReciever extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         //MainActivity inst = MainActivity.instance();
         //inst.setAlarmText("Alarm! Wake up! Wake up!");
-        Toast.makeText(context,"TIme is up", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context,"Bus Time", Toast.LENGTH_SHORT).show();
         //this will sound the alarm tone
         //this will sound the alarm once, if you wish to
 

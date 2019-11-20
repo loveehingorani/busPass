@@ -24,7 +24,7 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainPageFragment extends Fragment {
-
+private TextView mUserName;
     MondayDatabaseHelper mondaydb;
     private CardView mBuyPass,mTransactions,mCallButton,mReminder;
     private TextView mShowEmail,mShowName;
@@ -43,6 +43,7 @@ public class MainPageFragment extends Fragment {
 
        // mShowEmail.setText(LoginActivity.getEmail());
        // mShowName.setText(LoginActivity.getUserName());
+
         mCallButton=v.findViewById(R.id.button_call);
        // mPdfButton=v.findViewById(R.id.button1);
         mTransactions=v.findViewById(R.id.transactions);
@@ -120,4 +121,5 @@ public class MainPageFragment extends Fragment {
 //        getActivity().finish();
 //
 //    }
+
 }

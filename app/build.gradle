@@ -41,7 +41,7 @@ dependencies {
     implementation('com.paytm:pgplussdk:1.2.3') {
         transitive = true;
     }
-
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     implementation 'com.google.firebase:firebase-core:17.2.1'
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
     implementation 'com.google.firebase:firebase-auth:19.1.0'
