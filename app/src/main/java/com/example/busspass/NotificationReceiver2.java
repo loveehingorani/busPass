@@ -34,10 +34,10 @@ public class NotificationReceiver2 extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         //MainActivity inst = MainActivity.instance();
         //inst.setAlarmText("Alarm! Wake up! Wake up!");
-        Toast.makeText(context, "TIme is up", Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(context, "TIme is up", Toast.LENGTH_SHORT).show();
         //this will sound the alarm tone
         //this will sound the alarm once, if you wish to
-        Log.d("RecyclerView ","sfssgsgsfsfbfsbfsvdfvdfbdf");
+        //Log.d("RecyclerView ","sfssgsgsfsfbfsbfsvdfvdfbdf");
 
         mondaydb = new MondayDatabaseHelper(context);
         tuesdaydb = new TuesdayDatabaseHelper(context);
@@ -51,22 +51,24 @@ public class NotificationReceiver2 extends BroadcastReceiver {
                 new Intent(context, SplashActivity.class), 0);
 
         String dayString= intent.getStringExtra("dayday");
-        // Log.i("to checkkkkkkkkkkkk","day"+dayString);
+         Log.i("to checkkkkkkkkkkkk","day"+dayString);
         if(dayString.equals("Monday"))
-            mondaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("notify",false),false);
+            mondaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("alarm",false),false);
         else if(dayString.equals("Tuesday")) {
-            tuesdaydb.updatedata(intent.getStringExtra("id"),  intent.getBooleanExtra("notify", false),false);
+            tuesdaydb.updatedata(intent.getStringExtra("id"),  intent.getBooleanExtra("alarm", false),false);
         }
-        else if(dayString.equals("Wednesday"))
-            wednesdaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("notify",false),false);
+        else if(dayString.equals("Wednesday")) {
+            wednesdaydb.updatedata(intent.getStringExtra("id"), intent.getBooleanExtra("alarm", false), false);
+            Log.i("to checkkkkkkkkkkkk","day"+dayString+intent.getStringExtra("id"));
+        }
         else if(dayString.equals("Thursday"))
-            thursdaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("notify",false),false);
+            thursdaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("alarm",false),false);
         else if(dayString.equals("Friday"))
-            fridaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("notify",false),false);
+            fridaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("alarm",false),false);
         else if(dayString.equals("Saturday"))
-            saturdaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("notify",false),false);
+            saturdaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("alarm",false),false);
         else if(dayString.equals("Sunday"));
-        sundaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("notify",false),false);
+            sundaydb.updatedata(intent.getStringExtra("id"),intent.getBooleanExtra("alarm",false),false);
 
         String CHANNEL_ID = "reminder_channel";
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -82,8 +84,8 @@ public class NotificationReceiver2 extends BroadcastReceiver {
         }
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                        .setSmallIcon(R.drawable.home)
-                        .setContentTitle("Bus At")
+                        .setSmallIcon(R.drawable.bus_logo_test)
+                        .setContentTitle("Bus At "+intent.getStringExtra("time"))
                         .setContentText("Your Bus is at Gate No.1 and will be leaving soon");
         mBuilder.setContentIntent(contentIntent);
         mBuilder.setDefaults(Notification.DEFAULT_SOUND);

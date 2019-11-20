@@ -115,6 +115,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     }
                     if(itemList.get(position).getDay().equals("Wednesday")) {
                         wednesdaydb.updatedata(itemList.get(position).getId(), true, itemList.get(position).getNotifyMe());
+                       // AlarmSetter("02:16 PM","Wednesday",1,itemList.get(position).getNotifyMe());
                         AlarmSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),58+Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getNotifyMe());
                         Toast.makeText(mContext, "Alarm Set" , Toast.LENGTH_LONG).show();
                     }
@@ -195,33 +196,33 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     }
                     if(itemList.get(position).getDay().equals("Tuesday")) {
                         tuesdaydb.updatedata(itemList.get(position).getId(),  itemList.get(position).getSetReminder(),true);
-                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getSetReminder());
+                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId()))+29,itemList.get(position).getSetReminder());
                         Toast.makeText(mContext, "You Will Be Notified", Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Wednesday")) {
                         wednesdaydb.updatedata(itemList.get(position).getId(),  itemList.get(position).getSetReminder(),true);
-                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getSetReminder());
-                        //NotificationSetter("23:16 PM","Tuesday",490,false);
+                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId()))+58,itemList.get(position).getSetReminder());
+                       // NotificationSetter("02:54 PM","Wednesday",490,itemList.get(position).getSetReminder());
                         Toast.makeText(mContext, "You Will Be Notified", Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Thurday")) {
                         thursdaydb.updatedata(itemList.get(position).getId(),  itemList.get(position).getSetReminder(),true);
-                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getSetReminder());
+                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId()))+87,itemList.get(position).getSetReminder());
                         Toast.makeText(mContext, "You Will Be Notified", Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Friday")) {
                         fridaydb.updatedata(itemList.get(position).getId(),  itemList.get(position).getSetReminder(),true);
-                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getSetReminder());
+                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId()))+116,itemList.get(position).getSetReminder());
                         Toast.makeText(mContext, "You Will Be Notified", Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Saturday")) {
                         saturdaydb.updatedata(itemList.get(position).getId(),  itemList.get(position).getSetReminder(),true);
-                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getSetReminder());
+                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId()))+145,itemList.get(position).getSetReminder());
                         Toast.makeText(mContext, "You Will Be Notified", Toast.LENGTH_LONG).show();
                     }
                     if(itemList.get(position).getDay().equals("Sunday")) {
                         sundaydb.updatedata(itemList.get(position).getId(),  itemList.get(position).getSetReminder(),true);
-                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId())),itemList.get(position).getSetReminder());
+                        NotificationSetter(itemList.get(position).getTime(),itemList.get(position).getDay(),Integer.parseInt((itemList.get(position).getId()))+178,itemList.get(position).getSetReminder());
                         Toast.makeText(mContext, "You Will Be Notified", Toast.LENGTH_LONG).show();
                     }
                 }
@@ -344,7 +345,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         intent.putExtra("id",String.valueOf(updateid));
         intent.putExtra("day",dayString);
         intent.putExtra("notify",notifyme);
-
+        Log.d("RecyclerView","id:      "  + id);
+        Log.d("RecyclerView","updateid:      "  + updateid);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(mContext, id, intent, 0);
         alarmMgr.setExact(AlarmManager.RTC_WAKEUP, alarmTime,  pendingIntent);
     }
@@ -353,6 +355,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void unSetAlarm(int id){
         AlarmManager alarmMgr = (AlarmManager) mContext.getSystemService(mContext.ALARM_SERVICE);
         Intent intent = new Intent(mContext, AlarmReciever.class);
+        Log.d("RecyclerView","id:      "  + id);
         PendingIntent pending = PendingIntent.getBroadcast(mContext, id, intent, 0);
         alarmMgr.cancel(pending);
     }
@@ -409,13 +412,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         intent.putExtra("time",timeString);
         intent.putExtra("dayday",dayString);
         intent.putExtra("alarm",alarm);
+        id=id+196;
+        Log.d("RecyclerView","id:      "  + id);
+        Log.d("RecyclerView","updateid:      "  + updateid);
         Log.d("RecyclerView","date "+alarmCalendar.get((Calendar.DATE)));
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(mContext, id+196, intent, 0);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(mContext, id, intent, 0);
         alarmMgr.setExact(AlarmManager.RTC_WAKEUP, alarmTime,  pendingIntent);
     }
     public void unSetNotification(int id){
         AlarmManager alarmMgr = (AlarmManager) mContext.getSystemService(mContext.ALARM_SERVICE);
         Intent intent = new Intent(mContext, NotificationReceiver2.class);
+        Log.d("RecyclerView","id:      "  + id);
         PendingIntent pending = PendingIntent.getBroadcast(mContext, id, intent, 0);
         alarmMgr.cancel(pending);
     }
