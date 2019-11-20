@@ -1,39 +1,49 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/roundgrad"
+    android:weightSum="100">
 
     <ImageView
         android:id="@+id/simpleImageView"
         android:layout_width="fill_parent"
-        android:layout_height="190dp"
+        android:layout_height="@dimen/_150sdp"
         android:src="@drawable/bus2"
-        android:background="#000"/>
+        android:background="#000"
+        android:layout_weight="15"/>
 
     <LinearLayout
-        android:layout_width="160dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="170dp">
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_weight="10">
 
         <TextView
             android:id="@+id/txtvw"
-            android:layout_width="160dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="Set Reminder"
-            android:layout_marginLeft="20dp"
-            android:textColor="@color/colorPrimaryDark" />
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="7dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="240dp">
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_weight="10">
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:text="Select Day"
+            android:textStyle="bold"
             android:layout_marginLeft="20dp"/>
 
     </LinearLayout>
@@ -41,20 +51,23 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="310dp"
-        android:layout_marginTop="85dp">
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="10"
+        android:weightSum="50">
 
 
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
-            android:layout_width="240dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="180dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
             android:paddingStart="13dp"
             android:paddingEnd="13dp"
-            android:background="@drawable/rounded">
+            android:background="@drawable/rounded"
+            android:layout_weight="30">
 
 
             <LinearLayout
@@ -138,26 +151,30 @@
 
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_30sdp"
             android:gravity="center_horizontal"
-            android:layout_marginTop="185dp"
-            android:text="hello"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="Select"
             android:textSize="15sp"
             android:background="@drawable/round"
+            android:layout_weight="20"
             />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="320dp">
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_weight="10">
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="40dp"
             android:text="Select Arrival"
+            android:textStyle="bold"
             android:layout_marginLeft="20dp"/>
 
     </LinearLayout>
@@ -165,23 +182,26 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="260dp"
-        android:layout_marginTop="165dp">
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="10"
+        android:weightSum="50">
 
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView1"
-            android:layout_width="240dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="180dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
             android:paddingStart="13dp"
             android:paddingEnd="13dp"
-            android:background="@drawable/rounded">
+            android:background="@drawable/rounded"
+            android:layout_weight="30">
 
 
             <LinearLayout
-                android:layout_width="240dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -241,26 +261,30 @@
 
         <TextView
             android:id="@+id/tv2"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_30sdp"
             android:gravity="center_horizontal"
-            android:layout_marginTop="185dp"
-            android:text="hello"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="Select"
             android:textSize="15sp"
             android:background="@drawable/round"
+            android:layout_weight="20"
             />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="400dp">
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:weightSum="10">
 
         <TextView
-            android:layout_width="180dp"
+            android:layout_width="140dp"
             android:layout_height="40dp"
             android:text="Select Destination"
+            android:textStyle="bold"
             android:layout_marginLeft="20dp"/>
 
     </LinearLayout>
@@ -268,19 +292,22 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="260dp"
-        android:layout_marginTop="245dp">
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="10"
+        android:weightSum="50">
 
         <HorizontalScrollView
-            android:id="@+id/horizontalScrollView3"
-            android:layout_width="240dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="180dp"
-            android:layout_marginRight="30dp"
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
             android:paddingStart="13dp"
             android:paddingEnd="13dp"
             android:background="@drawable/rounded"
-            android:layout_marginLeft="20dp">
+            android:layout_weight="30">
 
 
             <LinearLayout
@@ -344,25 +371,34 @@
 
         <TextView
             android:id="@+id/tv3"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_30sdp"
             android:gravity="center_horizontal"
-            android:layout_marginTop="185dp"
-            android:text="hello"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="Select"
             android:textSize="15sp"
             android:background="@drawable/round"
+            android:layout_weight="20"
             />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btgo"
-        android:text="Proceed"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="520dp"
-        android:layout_marginLeft="120dp"
-        android:background="@drawable/rounded1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_weight="15">
+
+        <Button
+            android:id="@+id/btgo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/rounded1"
+            android:text="Proceed" />
+
+    </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

@@ -3,6 +3,8 @@ package com.example.busspass;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -10,7 +12,9 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -54,6 +58,9 @@ public class MainActivity extends AppCompatActivity   {
                 new AppBarConfiguration.Builder(new int[]{R.id.home,R.id.buybuspass,R.id.transactions,R.id.busTimePdf,R.id.reminder,R.id.logout,R.id.aboutus})
                         .setDrawerLayout(mDrawerLayout)
                         .build();
+//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_SMS, Manifest.permission.RECEIVE_SMS}, 101);
+//        }
         mondaydb.insertData("1","07:00 AM", "Ajmeri Gate", "LNMIIT", "LNMIIT Bus Service",false,false);
         mondaydb.insertData("2","07:00 AM", "Chomu Puliya", "LNMIIT", "Government Bus",false,false);
         mondaydb.insertData("3","08:00 AM", "Ajmeri Gate", "LNMIIT", "LNMIIT Bus Service",false,false);
