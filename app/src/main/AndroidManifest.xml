@@ -19,7 +19,7 @@
         android:roundIcon="@drawable/bus_logo_test"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SuccessActivity"></activity>
+        <activity android:name=".SuccessActivity" />
         <activity
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -47,7 +47,8 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
-        <receiver android:name=".AlarmReciever" />
+        <receiver android:name=".AlarmReciever">
+        </receiver>
         <receiver android:name=".NotificationReceiver2" />
     </application>
 
