@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 public class Checksum extends AppCompatActivity implements PaytmPaymentTransactionCallback {
     String customerId="", orderId="", merchantId = "BUXzaY54718402638352";
@@ -124,6 +125,7 @@ public class Checksum extends AppCompatActivity implements PaytmPaymentTransacti
     public void onTransactionResponse(Bundle bundle) {
         if(bundle.get("STATUS").equals("TXN_SUCCESS"))
         {
+
             Transactions transactions = new Transactions(FirebaseAuth.getInstance().getCurrentUser().getUid(),
                     Timestamp.now(),
                     bundle.getString("ORDERID"),
