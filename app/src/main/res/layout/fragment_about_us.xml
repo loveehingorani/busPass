@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
             <androidx.cardview.widget.CardView
@@ -36,15 +36,15 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         app:cardCornerRadius="30dp"
                         android:background="@android:color/transparent">
 
                         <ImageView
-                            android:scaleType="fitXY"
+                            android:scaleType="centerCrop"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bus2"/>
+                            android:src="@drawable/mohit_jindal_photo"/>
 
 
                     </androidx.cardview.widget.CardView>
@@ -54,29 +54,29 @@
                         android:layout_height="90dp"
                         android:background="@drawable/roundnew"
                         android:layout_marginTop="25dp"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginStart="15dp"/>
 
 
                     <TextView
                         android:layout_width="120dp"
                         android:layout_height="20dp"
-                        android:text="name is this"
+                        android:text="@string/mohit_jindal"
                         android:layout_marginTop="104dp"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginStart="20dp"/>
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="I am a pre-final year from LNMIIT, reaching to the end"/>
+                        android:layout_marginStart="120dp"
+                        android:text="@string/mohit_text"/>
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="This is It"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
 
@@ -104,7 +104,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         app:cardCornerRadius="30dp"
                         android:background="@android:color/transparent">
 
@@ -112,7 +112,7 @@
                             android:scaleType="fitXY"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bus2"/>
+                            android:src="@drawable/smile"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -121,29 +121,29 @@
                         android:layout_height="90dp"
                         android:background="@drawable/roundnew"
                         android:layout_marginTop="25dp"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginStart="15dp"/>
 
 
                     <TextView
                         android:layout_width="120dp"
                         android:layout_height="20dp"
-                        android:text="name is this"
+                        android:text="@string/abhay_aravinda"
                         android:layout_marginTop="104dp"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginStart="20dp"/>
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="I am a pre-final year from LNMIIT, reaching to the end"/>
+                        android:layout_marginStart="120dp"
+                        android:text="@string/abhay_text"/>
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="This is It"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
 
@@ -171,7 +171,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         app:cardCornerRadius="30dp"
                         android:background="@android:color/transparent">
 
@@ -179,7 +179,7 @@
                             android:scaleType="fitXY"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bus2"/>
+                            android:src="@drawable/smile"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -188,29 +188,29 @@
                         android:layout_height="90dp"
                         android:background="@drawable/roundnew"
                         android:layout_marginTop="25dp"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginStart="15dp"/>
 
 
                     <TextView
                         android:layout_width="120dp"
                         android:layout_height="20dp"
-                        android:text="name is this"
+                        android:text="@string/lovee_hingorani"
                         android:layout_marginTop="104dp"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginStart="20dp"/>
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="I am a pre-final year from LNMIIT, reaching to the end"/>
+                        android:layout_marginStart="120dp"
+                        android:text="@string/lovee_text"/>
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="This is It"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
 
@@ -247,7 +247,7 @@
                             android:scaleType="fitXY"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bus2"/>
+                            android:src="@drawable/smile"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -261,23 +261,23 @@
                     <TextView
                         android:layout_width="120dp"
                         android:layout_height="20dp"
-                        android:text="name is this"
+                        android:text="@string/ashish_kumar"
                         android:layout_marginTop="104dp"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginStart="20dp"/>
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="I am a pre-final year from LNMIIT, reaching to the end"/>
+                        android:layout_marginStart="120dp"
+                        android:text="@string/ashish_text"/>
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="This is It"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
 
@@ -306,7 +306,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         app:cardCornerRadius="30dp"
                         android:background="@android:color/transparent">
 
@@ -314,7 +314,7 @@
                             android:scaleType="fitXY"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bus2"/>
+                            android:src="@drawable/aayush_mishra_photo"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -323,29 +323,29 @@
                         android:layout_height="90dp"
                         android:background="@drawable/roundnew"
                         android:layout_marginTop="25dp"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginStart="15dp"/>
 
 
                     <TextView
                         android:layout_width="120dp"
                         android:layout_height="20dp"
-                        android:text="name is this"
+                        android:text="@string/aayush_mishra"
                         android:layout_marginTop="104dp"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginStart="20dp"/>
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="40dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="I am a pre-final year from LNMIIT, reaching to the end"/>
+                        android:layout_marginStart="120dp"
+                        android:text="@string/aayush_text"/>
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="103dp"
-                        android:layout_marginLeft="120dp"
-                        android:text="This is It"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/standard_bottom_text"
                         android:gravity="center_horizontal"/>
 
                 </RelativeLayout>

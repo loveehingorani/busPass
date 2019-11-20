@@ -78,4 +78,15 @@
     <string name="remind_me_about_bus_time">Remind me about bus time</string>
     <string name="call_main_gate">Call Main Gate</string>
     <string name="call_main_gate_for_more_bus_details">Call Main Gate for more bus details</string>
+    <string name="mohit_jindal">Mohit Jindal</string>
+    <string name="abhay_aravinda">Abhay Aravinda</string>
+    <string name="abhay_text">Chess Player and Hardcore Coder.</string>
+    <string name="aayush_mishra">Aayush Mishra</string>
+    <string name="lovee_hingorani">Lovee Hingorani</string>
+    <string name="ashish_text">UI/UX Expert and Part time Android Developer.</string>
+    <string name="mohit_text">Competitive Coder and Android Developer.</string>
+    <string name="ashish_kumar">Ashish Kumar</string>
+    <string name="aayush_text">Economics Enthusiast. Part time Android Developer.</string>
+    <string name="standard_bottom_text">Pre-final year student</string>
+    <string name="lovee_text">Computer Science Enthusiast.</string>
 </resources>
