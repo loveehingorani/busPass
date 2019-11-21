@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity   {
 
         mUserName=(TextView) headView.findViewById(R.id.usernamedisplay);
 
-        mUserName.setText(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+        mUserName.setText(FirebaseAuth.getInstance().getCurrentUser().getDisplayName().toUpperCase());
         navController=Navigation.findNavController(this,R.id.nav_host);
         appBarConfiguration =
                 new AppBarConfiguration.Builder(new int[]{R.id.home,R.id.buybuspass,R.id.transactions,R.id.busTimePdf,R.id.reminder,R.id.logout,R.id.aboutus})

@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivityForResult(
                         AuthUI.getInstance()
                         .createSignInIntentBuilder()
-                        .setLogo(R.mipmap.ic_launcher)
+                        .setLogo(R.drawable.bus_logo_test)
                         .setAvailableProviders(providers)
                         .setIsSmartLockEnabled(false)
                         .build(),
