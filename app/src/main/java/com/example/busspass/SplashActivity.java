@@ -1,5 +1,6 @@
 package com.example.busspass;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -19,6 +20,8 @@ public class SplashActivity extends AppCompatActivity {
         progressBar.setMax(100);
         progressBar.setScaleY(3f);
         progressAnimation();
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.hide();
     }
     public void progressAnimation(){
         ProgressBarAnimation anim= new ProgressBarAnimation(this, progressBar,textView,0f,100f);

@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
+
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
         android:id="@+id/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/buspass2"
+        android:layout_width="162dp"
+        android:layout_height="198dp"
         android:layout_above="@+id/text_view"
-        android:layout_marginBottom="180dp"
-        android:contentDescription="@string/todo1" />
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="162dp"
+        android:contentDescription="@string/todo1"
+        android:src="@drawable/buspass2" />
 
     <TextView
         android:id="@+id/loading"

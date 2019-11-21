@@ -18,6 +18,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class TransactionFragment extends Fragment {
@@ -47,9 +48,12 @@ public class TransactionFragment extends Fragment {
                 .addOnSuccessListener(queryDocumentSnapshots -> {
                     transactionList.clear();
                     for(DocumentSnapshot documentSnapshot: queryDocumentSnapshots){
+
                         Transactions transactions = documentSnapshot.toObject(Transactions.class);
                         transactionList.add(transactions);
+
                     }
+                    Collections.reverse(transactionList);
                     transactionRecyclerAdapter.notifyDataSetChanged();
                 });
     }

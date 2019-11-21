@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/img"
+    android:background="@drawable/roundgrad"
     android:weightSum="100">
 
 
@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center_horizontal"
+            android:background="@drawable/roundeda"
             android:text="Buy Bus Pass"
             android:textSize="35sp"
             android:textStyle="bold"
@@ -38,7 +39,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/grey"
+            android:background="@color/white"
             android:layout_margin="20dp"
             android:layout_weight="5"/>
 
@@ -203,14 +204,15 @@
 
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="@dimen/_120sdp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
             android:id="@+id/proceed_to_pay"
             android:layout_marginBottom="20dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/roundedb"
+            android:background="@drawable/rounded1"
             android:text="Proceed to pay"
+            android:textSize="@dimen/_12sdp"
             android:layout_weight="20"/>
 
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MyDialogFragment">
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:layout_gravity="center"
+        android:src="@drawable/call"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="@dimen/_280sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_16sdp"
+        android:text="Do you want to proceed to call"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="@dimen/_75sdp"
+            android:id="@+id/callyes"
+            android:background="@drawable/roundnew"
+
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="YES"
+            android:textSize="@dimen/_16sdp" />
+
+        <Button
+
+            android:id="@+id/callno"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_55sdp"
+
+            android:background="@drawable/roundnew"
+            android:text="NO"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+</LinearLayout>

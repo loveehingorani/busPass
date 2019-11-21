@@ -31,18 +31,26 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="₹ "
+            android:textSize="25sp"/>
+        <TextView
             android:id="@+id/amount_paid"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginLeft="120dp"
             android:text="50"
-            android:paddingLeft="35dp"
+            android:textColor="@color/black"
+            android:paddingLeft="0dp"
             android:textSize="25sp"/>
 
         <TextView
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:text=" Rs Paid"
+            android:text=" Paid"
+            android:fontFamily="sans-serif-black"
             android:textSize="25sp"/>
 
     </LinearLayout>
@@ -51,7 +59,8 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+
+        android:layout_marginTop="20dp">
 
         <TextView
 
@@ -81,10 +90,10 @@
 
             android:layout_width="@dimen/_85sdp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="55dp"
             android:text="Date: Time: "
             android:textColor="#0000ff"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
 
         <TextView
             android:layout_width="wrap_content"
